@@ -1,0 +1,17 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "sass scss/main.scss css/style.css --no-source-map",
+    "compile-watch:scss": "sass scss/main.scss css/style.css --watch --no-source-map",
+    "live-server": "live-server --no-css-inject"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.53.0"
+  }
+}
