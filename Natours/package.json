@@ -4,6 +4,7 @@
   "description": "Landing page for natours",
   "main": "index.js",
   "scripts": {
+    "pretty": "prettier --write \"./**/*.{js,jsx,json,scss,html}\"",
     "compile:scss": "sass scss/main.scss css/style.css --no-source-map",
     "compile-watch:scss": "sass scss/main.scss css/style.css --watch --no-source-map",
     "live-server": "live-server --no-css-inject"
@@ -12,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "live-server": "^1.2.2",
+    "prettier": "^2.7.1",
     "sass": "^1.53.0"
   }
 }
