@@ -1,3 +1,16 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 *,
 *::after,
 *::before {
@@ -8,6 +21,21 @@
 
 html {
   font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -100,8 +128,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  /* fix for text going a bit to the top at the end of animation on some browsers */
+          backface-visibility: hidden; /* fix for text going a bit to the top at the end of animation on some browsers */
   margin-bottom: 6rem;
 }
 .heading-primary--main {
@@ -252,8 +279,7 @@ body {
   -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
           animation: moveInBottom 0.5s ease-out 0.75s;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-  /* automatically applies styles of 0% before animation starts */
+          animation-fill-mode: backwards; /* automatically applies styles of 0% before animation starts */
 }
 
 .btn-text:link, .btn-text:visited {
