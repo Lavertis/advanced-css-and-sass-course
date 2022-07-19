@@ -24,20 +24,43 @@
   }
 
   &__left {
-    width: 33.33%;
-    display: table-cell;
+    display: flex;
+
+    @include respond(phone) {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    @include respond(big-desktop) {
+      width: 33.33%;
+      display: table-cell;
+    }
   }
 
   &__right {
-    width: 66.67%;
-    display: table-cell;
-    vertical-align: middle;
+    display: block;
     padding: 3rem 5rem;
+
+    @include respond(big-desktop) {
+      width: 66.67%;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 3rem 5rem;
+    }
   }
 
   &__img {
-    display: block;
-    width: 100%;
+    width: 50%;
+
+    @include respond(phone) {
+      display: block;
+      width: 100%;
+    }
+
+    @include respond(big-desktop) {
+      display: block;
+      width: 100%;
+    }
   }
 
   &__text {
