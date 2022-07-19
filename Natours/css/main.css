@@ -988,6 +988,7 @@ body {
 }
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
+  left: 0;
   width: 100%;
 }
 .navigation__icon {

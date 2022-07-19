@@ -116,6 +116,7 @@
 
   &__checkbox:checked ~ &__nav {
     opacity: 1;
+    left: 0;
     width: 100%;
   }
 
