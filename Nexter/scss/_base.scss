@@ -28,8 +28,13 @@ html {
 }
 
 body {
-    font-family: $font-primary;
-    color: $color-grey-dark-2;
-    font-weight: 300;
-    line-height: 1.6;
+  font-family: $font-primary;
+  color: $color-grey-dark-2;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
 }
